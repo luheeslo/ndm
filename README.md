@@ -1,6 +1,6 @@
 # Ndm - A No-nonsense Dependency Manager 
 
-- a experimental No-nonsense Dependency Manager for my needs
+- a experimental **N**o-nonsense **D**ependency **M**anager for my needs
 - a simple and unnecessary wrapper around the [pip-tools](https://pip-tools.readthedocs.io/en/latest/)
 - if you are going to use it, use it very carefully!
 
