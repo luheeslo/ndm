@@ -1,0 +1,39 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+requires-python = ">=3.10"
+name = "ndm"
+version = "0.1.0"
+dependencies = [
+    "sh",
+    "jinja2",
+    "tomli",
+    "tomli_w",
+    "typer[all]",
+    "pip-tools",
+]
+readme = "README.md"
+authors = [
+    { name="Luiz Henrique Estrela Lopes", email="luheeslo@gmail.com" }
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[project.scripts]
+ndm = "ndm.__main__:app"
+
+[project.urls]
+"Homepage" = "https://github.com/luheeslo/ndm"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
