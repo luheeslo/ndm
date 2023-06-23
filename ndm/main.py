@@ -178,8 +178,3 @@ def install(dev: bool = False, syn: bool = False, venv: bool = True):
         pip_cmd("install", "-r", REQUIREMENTS_FILENAME)
         if syn:
             sync(dev, False, venv)
-
-
-@app.command()
-def test():
-    print(Path().absolute().joinpath(VENV_FOLDER_NAME))
